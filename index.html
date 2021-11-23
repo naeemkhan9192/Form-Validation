@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Project</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="message-container"></div>
+    <form action="#" class="form-container">
+        <header>
+            <h1>Form Validation</h1>
+        </header>
+        <div class="name-container">
+            <label for="firstName">First Name</label>
+            <input  type="text" name="firstName" id="firstName" placeholder="Enter your First Name">
+            <small id="invalid-fname" class="show">
+                Name must be start with Alphabet and 8 character long
+            </small>
+        </div>
+        <div class="name-container">
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Enter your Last Name">
+            <small id="invalid-lname" class="show">
+                Name must be start with Alphabet and 8 character long
+            </small>
+        </div>
+        <div class="gender-container">
+            <p>Select your gender</p>
+            <div class="gender">
+                <input type="radio" name="type" value="male" class="gender-select">
+                <label for="gender">Male</label>
+            </div>
+            <div class="gender">
+                <input type="radio" name="type" value="female" class="gender-select">
+                <label for="gender">Female</label>
+            </div>
+        </div>
+        <div class="email">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Your Email">
+            <small id="invalid-email" class="show">
+                Input a valid Email
+            </small>
+        </div>
+
+        <div class="phone">
+            <label for="phone">Phone No's</label>
+            <input type="text" id="phone" placeholder="Enter Your Phone Number">
+            <small id="invalid-phone" class="show">
+                Input a valid Phone Number
+            </small>
+        </div>
+        <button type="submit" id="btn">Submit</button>
+    </form>
+</body>
+<script src="index.js"></script>
+</html>
